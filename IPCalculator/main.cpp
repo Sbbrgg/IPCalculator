@@ -32,7 +32,7 @@ BOOL CALLBACK DlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		freopen("CONOUT$", "w", stdout);
 		std::cout << "Init" << std::endl;
 		SetFocus(GetDlgItem(hwnd, IDC_IP_ADDRESS));
-		SendMessage(GetDlgItem(hwnd, IDC_SPIN_PREFIX), UDM_SETRANGE, 0, MAKEWORD(32, 0));
+		SendMessage(GetDlgItem(hwnd, IDC_SPIN_PREFIX), UDM_SETRANGE, 0, MAKEWORD(30, 0));
 	}
 	break;
 
